@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>줄거리로 영화점수 뽑아내기</title>
+    <link href ='../css/model.css' rel = "stylesheet">
+</head>
+<body>
+    <center>
+    <h2>영화 줄거리 입력</h2>
+    <form method="post" action ="/cgi-bin/send_story_data.py" enctype="multipart/form-data">
+        <fieldset>
+            <p>
+                <label for="story">내용 : </label>
+                <textarea id="story" name="story"></textarea>
+            </p>
+            <p>
+                <label for="model">사용 모델 선택 : </label>
+                <select id="model" name="model">
+                    <option value="rnn">rnn모델 ver1000</option>
+                    <option value="rnn2">rnn모델 ver4000</option>
+                    <option value="lstm">lstm모델 ver1000</option>
+                    <option value="lstm2">lstm모델 ver4000</option>
+                </select>
+            </p>
+            <input type="submit" value=" " class="submit-button">
+        </fieldset>
+        
+    </form>
+    </center>
+</body>
+</html>
