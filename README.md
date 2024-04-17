@@ -21,6 +21,7 @@ https://www.themoviedb.org/
   <summary>
     박희진( 포스터로 장르 예측 모델 )
   </summary>
+  
   ## (1) 데이터 생성 , 확인 및 전처리
 
 - tmdb 웹사이트에서 크롤링
