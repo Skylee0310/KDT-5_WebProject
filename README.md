@@ -21,7 +21,7 @@ https://www.themoviedb.org/
   <summary>
     박희진( 포스터로 장르 예측 모델 )
   </summary>
-## (1) 데이터 생성 , 확인 및 전처리
+  ## (1) 데이터 생성 , 확인 및 전처리
 
 - tmdb 웹사이트에서 크롤링
     - 웹사이트가 동적 웹사이트여서 무한 스크롤 하면서 웹 크롤링 해야 했음. 끝 페이지에 도달했을 때, 계속 페이지가 닫겨서 결국 끝까지 스크롤하고 각 영화 정보 링크를 수집해서 파일 생성
@@ -42,7 +42,8 @@ https://www.themoviedb.org/
 - 포스터 URL과 장르 각 시리즈 concat을 통해 결합
 - 유니크한 장르를 확인하고 각 라벨의 분포를 시각화
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c19dc72a-3d43-4061-8eee-c886a3ffbb0f/105b4794-f2d2-419a-b367-148779060a02/Untitled.png)
+![image](https://github.com/KDT5-Web-3team/KDT-5_WebProject/assets/155441547/09d7111b-ffed-42a1-90d8-7a1aba21651a)
+
 
 - 다중 분류로 클래스를 나누니 각 클래스에 대한 데이터가 적음을 확인
     - 이미지 데이터 증강
@@ -53,7 +54,8 @@ https://www.themoviedb.org/
     - 따라서 위의 우선 순위에서 Horror보다 SF를 우선으로 하고 새로 이미지 데이터 수집
 - 데이터 증강 후 데이터 분포 확인
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c19dc72a-3d43-4061-8eee-c886a3ffbb0f/ca103f21-de28-43a4-ad66-69617039dce2/Untitled.png)
+![image](https://github.com/KDT5-Web-3team/KDT-5_WebProject/assets/155441547/4749da5b-eb78-4c0d-bc22-e3d41bee7278)
+
 
 - 채널이 1인 흑백 포스터도 존재해서 이미지 URL 정도로 이미지를 열어 파일에 저장할 때 if문을 걸어 채널이 3인 경우에만 이미지와 라벨을 리스트안에 같이 저장
     - 폴더명은 라벨명, 폴더 내에는 이미지 데이터
@@ -104,7 +106,8 @@ https://www.themoviedb.org/
 
 ## (6) 최종 CNN 모델 평가
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c19dc72a-3d43-4061-8eee-c886a3ffbb0f/36bbc99b-72c7-4e60-b97e-f4556da48051/Untitled.png)
+![image](https://github.com/KDT5-Web-3team/KDT-5_WebProject/assets/155441547/41d10e33-4050-42f2-a95b-7c83e49fc6aa)
+
 
 - 처음에 정의했던 CNN 모델은 성능이 0.22로 매우 낮았음
     - 성능을 올리기 위해 다양한 방법을 시도
