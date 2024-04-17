@@ -10,7 +10,8 @@ https://www.themoviedb.org/
   
 #### 기능설계서
 
-![image](https://github.com/KDT5-Web-3team/KDT-5_WebProject/assets/155441547/d1d618f5-1da1-4dce-86e8-48805100f7df)
+![image](https://github.com/KDT5-Web-3team/KDT-5_WebProject/assets/155441547/878a90c8-9693-4aec-8023-ac1a521932b5)
+
 
 
 
