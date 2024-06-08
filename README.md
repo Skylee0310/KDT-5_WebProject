@@ -181,8 +181,68 @@ https://www.themoviedb.org/
   
 <details>
   <summary>
-    이화은( 주제 )
+    이화은( 영화 줄거리로 로맨스 영화 분류 )
   </summary>
+<div markdown="1">
+  
+### 📝 주제 - 영화
+
+  ![image](https://github.com/Skylee0310/KDT-5_WebProject/assets/155412049/9555f9d5-d9e4-4349-8c97-d64e278dfa3b)
+
+| 📄 개인 주제 | 영화 줄거리로 로맨스 영화 분류 |
+| --- | --- |
+| 🙍🏻‍♂️ 팀원 | 김동현, 박희진, 양현우, 이화은 |
+| 📊 PPT | https://buly.kr/DEX5Rlq |
+
+✏ **개인** **주제 선정 배경**
+
+- 줄거리를 통해서 장르를 예측할 수 있다면 영화 장르를 분류 후 라벨링 자동화 가능 有
+- 또한 분류가 모호할 것으로 예상되는 스릴러, 호러, 미스터리 장르에 비해 비교적 확실히 분류가 될 것으로 예상되는 로맨스 장르와 그 외 장르를 분류해보기로 결정했다.
+
+✏ **데이터**
+
+- TMDB에 등록된 영화의 포스터, 제목, 줄거리, 감독 등 크롤링한 것을 사용.
+- 영문 데이터
+
+✏ **전처리**
+
+- 결측값, 중복값 삭제
+- 클래스 확인 ⇒ 불균형 데이터
+- 텍스트 전처리 - spaCy 사용
+  - spaCy :
+      → 사이썬 기반으로 개발된 오픈 소스 라이브러리, 자연어 처리 기능 제공
+      → NLTK와의 차이 : 빠른 속도와 정확도를 목표로 하는 머신러닝 기반 자연어 처리 라이브러리
+  - 영어, 숫자 제외 삭제
+  - 소문자 통일
+  - 불용어 불포함, 공백 삭제
+  - 2글자 이상일 경우 tokenList에 추가
+- 어휘 사전 생성
+- 인코딩
+- 패딩
+- 시각화
+  ![image](https://github.com/Skylee0310/KDT-5_WebProject/assets/155412049/0b5e3e76-c23f-4c41-8245-59b2238da653)
+
+✏ **모델 학습**
+- LSTM 모델 사용
+- epoch = 1000
+- train loss : 0.27
+- train accuracy : 0.93
+- val loss : 0.26
+- val accuracy : 0.93
+
+✏ **예측**
+
+- ⇒ 정확도는 높으나 심각한 데이터 불균형으로 인해 모든 영화가 ‘other(로맨스 외의 장르)’로 분류
+<hr></hr>
+
+✏ **WEB**
+![image](https://github.com/Skylee0310/KDT-5_WebProject/assets/155412049/63a51942-29e9-49ee-a64a-aa633cc91569)
+
+- 페이지
+![image](https://github.com/Skylee0310/KDT-5_WebProject/assets/155412049/93751232-0f48-4dae-b04d-4a965aa4b5f0)
+
+
+</div>
 </details>
 
 
